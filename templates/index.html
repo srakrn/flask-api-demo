@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %} <title>PM2.5@CPE</title> {%endblock %}
+{% block contents %}
+<div class="jumbotron">
+    <h1 class="display-4">Text Analysis Demo</h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <form action="/analyse" method="POST">
+            <div class="form-group">
+                <label for="tweetText">Tweet text</label>
+                <textarea class="form-control" name="tweetText"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
